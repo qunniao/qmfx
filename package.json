@@ -1,0 +1,81 @@
+{
+  "name": "opetion_vue",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "mock": "nodemon mockServer/server.js",
+    "serve": "vue-cli-service serve",
+    "start": "concurrently \"npm run serve\" \"npm run mock\"",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint"
+  },
+  "dependencies": {
+    "axios": "^0.18.1",
+    "clipboard": "^2.0.4",
+    "dns": "^0.2.2",
+    "echarts": "^4.4.0",
+    "echarts-liquidfill": "^2.0.5",
+    "element-ui": "^2.12.0",
+    "file-saver": "^2.0.2",
+    "html2canvas": "^1.0.0-rc.5",
+    "jspdf": "^1.5.3",
+    "moment": "^2.24.0",
+    "net": "^1.0.2",
+    "qrcode": "^1.4.2",
+    "qrcodejs2": "^0.0.2",
+    "qs": "^6.5.2",
+    "tinymce": "^5.1.0",
+    "vue": "^2.5.17",
+    "vue-router": "^3.0.1",
+    "vuex": "^3.0.1",
+    "wangeditor": "^3.1.1",
+    "xlsx": "^0.15.1"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "^3.0.5",
+    "@vue/cli-plugin-eslint": "^3.0.5",
+    "@vue/cli-service": "^3.0.5",
+    "boom": "^7.2.0",
+    "captchapng": "^0.0.1",
+    "compression-webpack-plugin": "^2.0.0",
+    "concurrently": "^4.0.1",
+    "koa": "^2.5.3",
+    "koa-body": "^4.0.4",
+    "koa-bodyparser": "^4.2.1",
+    "koa-router": "^7.4.0",
+    "koa2-cors": "^2.0.6",
+    "less": "^3.8.1",
+    "less-loader": "^4.1.0",
+    "mockjs": "^1.0.1-beta3",
+    "node-sass": "^4.12.0",
+    "node-xlsx": "^0.12.1",
+    "nodemon": "^1.18.4",
+    "sass-loader": "^8.0.0",
+    "style-resources-loader": "^1.2.1",
+    "vue-template-compiler": "^2.5.17",
+    "webpack": "^4.41.2"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/essential"
+    ],
+    "rules": {},
+    "parserOptions": {
+      "parser": "babel-eslint"
+    }
+  },
+  "postcss": {
+    "plugins": {
+      "autoprefixer": {}
+    }
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not ie <= 8"
+  ]
+}
